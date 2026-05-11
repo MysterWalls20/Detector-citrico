@@ -12,6 +12,7 @@ def project_root() -> Path:
 ROOT = project_root()
 
 YOLOV5_DIR = ROOT / "yolov5"
+YOLOV5S_PT = YOLOV5_DIR / "yolov5s.pt"
 
 def find_latest_best(weights_root: Path) -> Path | None:
     candidates = list((weights_root / "runs" / "train").glob("**/weights/best.pt"))
@@ -20,6 +21,11 @@ def find_latest_best(weights_root: Path) -> Path | None:
     return max(candidates, key=lambda p: p.stat().st_mtime)
 
 WEIGHTS_PT = find_latest_best(YOLOV5_DIR)
+if WEIGHTS_PT is None and YOLOV5S_PT.exists():
+    WEIGHTS_PT = YOLOV5S_PT
+    USING_PRETRAINED = True
+else:
+    USING_PRETRAINED = False
 
 CAM_INDEX   = 0
 

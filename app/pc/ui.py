@@ -23,7 +23,7 @@ from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg as FigureCanvas
 from config import (
     ROOT, YOLOV5_DIR, WEIGHTS_PT, CLASS_NAMES, SPANISH,
     CAM_INDEX, OUTPUT_HTML, CONF_THRES, IOU_THRES, es,
-    add_yolov5_to_syspath
+    USING_PRETRAINED, add_yolov5_to_syspath
 )
 from detector import VideoThread
 
@@ -37,9 +37,15 @@ class MainWindow(QMainWindow):
 
         if WEIGHTS_PT is None:
             QMessageBox.critical(self, "Error",
-                "No se encontró ningún modelo entrenado (best.pt).\n\n"
-                "Ejecuta primero:\n  python train_dataset.py")
-            raise FileNotFoundError("No se encontró best.pt en yolov5/runs/train/**/weights/")
+                "No se encontró ningún modelo (best.pt ni yolov5s.pt).\n\n"
+                "Descarga yolov5s.pt o entrena con:\n  python train_dataset.py")
+            raise FileNotFoundError("No se encontró ningún archivo .pt")
+
+        if USING_PRETRAINED:
+            QMessageBox.warning(self, "Aviso",
+                "Usando modelo pre-entrenado (yolov5s.pt).\n"
+                "Las detecciones NO serán precisas para cítricos.\n\n"
+                "Entrena un modelo personalizado con:\n  python train_dataset.py")
 
         try:
             add_yolov5_to_syspath(str(YOLOV5_DIR))
