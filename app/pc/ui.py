@@ -35,6 +35,12 @@ class MainWindow(QMainWindow):
         self.setWindowTitle("Detección de Cítricos")
         self.setMinimumSize(QSize(1200, 700))
 
+        if WEIGHTS_PT is None:
+            QMessageBox.critical(self, "Error",
+                "No se encontró ningún modelo entrenado (best.pt).\n\n"
+                "Ejecuta primero:\n  python train_dataset.py")
+            raise FileNotFoundError("No se encontró best.pt en yolov5/runs/train/**/weights/")
+
         try:
             add_yolov5_to_syspath(str(YOLOV5_DIR))
             self.model = torch.hub.load(str(YOLOV5_DIR), 'custom', path=str(WEIGHTS_PT), source='local')
