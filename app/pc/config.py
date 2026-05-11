@@ -12,7 +12,7 @@ def project_root() -> Path:
 ROOT = project_root()
 
 YOLOV5_DIR = ROOT / "yolov5"
-YOLOV5S_PT = YOLOV5_DIR / "yolov5s.pt"
+YOLOV5S_PT = ROOT / "yolov5s.pt"
 
 def find_latest_best(weights_root: Path) -> Path | None:
     candidates = list((weights_root / "runs" / "train").glob("**/weights/best.pt"))
