@@ -1,0 +1,61 @@
+# ─── Entorno virtual ───
+.venv/
+venv/
+env/
+ENV/
+
+# ─── Python ───
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+.eggs/
+dist/
+build/
+*.egg
+
+# ─── Jupyter ───
+.ipynb_checkpoints/
+
+# ─── Modelos (pesos) ───
+*.pt
+*.pth
+*.weights
+*.pb
+*.onnx
+*.engine
+*.mlmodel
+*.tflite
+*.h5
+
+# ─── Dataset: solo se sube estructura (data.yaml + .gitkeep) ───
+dataset/**/images/*
+!dataset/**/images/**/.gitkeep
+dataset/**/labels/*
+!dataset/**/labels/**/.gitkeep
+
+# ─── Resultados de entrenamiento ───
+yolov5/runs/
+runs/
+
+# ─── Sistema ───
+.DS_Store
+Thumbs.db
+*.log
+.env
+.env.local
+
+# ─── IDE ───
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# ─── PyInstaller ───
+*.spec
+*.manifest
+
+# ─── Archivos temporales ───
+*.tmp
+*.temp

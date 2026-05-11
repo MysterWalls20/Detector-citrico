@@ -1,0 +1,61 @@
+# Proyecto Raspberry Pi 5 - Full ENV con GUI y YOLO
+
+# Machine Learning ------------------------------------------------------------
+torch==2.2.0         # instalar con index-url ARM: https://download.pytorch.org/whl/cpu
+torchvision==0.17.1
+torchaudio==2.2.0
+ultralytics==8.3.0
+thop==0.1.1
+
+# Visión por Computadora ------------------------------------------------------
+opencv-python==4.8.1.78
+Pillow==10.3.0
+shapely==2.0.4
+
+# Ciencia de Datos -------------------------------------------------------------
+numpy==1.26.4
+pandas==2.2.1
+scipy==1.11.4
+seaborn==0.13.2
+matplotlib==3.8.2
+
+# GUI (Interfaz gráfica) ------------------------------------------------------
+PyQt5==5.15.10
+PyQtWebEngine==5.15.6
+
+# Backend Web + API -----------------------------------------------------------
+Flask==2.3.3
+Werkzeug==3.0.3
+gunicorn==21.2.0
+
+# Logging / Monitoreo ---------------------------------------------------------
+tensorboard==2.14.0
+
+# Herramientas Sistema --------------------------------------------------------
+psutil==5.9.6
+pywin32==306           # se ignorará automáticamente en Linux/ARM
+python-dotenv==1.0.1
+
+# Utilidades adicionales ------------------------------------------------------
+requests==2.31.0
+PyYAML==6.0.1
+tqdm==4.66.3
+packaging==23.2
+gitpython==3.1.40
+filetype==1.2.0
+
+# Folium / Mapas --------------------------------------------------------------
+folium==0.14.0
+xyzservices==2023.10.1
+
+# Jupyter (Opcional pero útil en desarrollo) ----------------------------------
+ipython==8.18.1
+ipykernel==6.29.0
+jupyter_client==8.6.1
+jupyter_core==5.5.1
+
+# Limpieza / Compatibilidad ---------------------------------------------------
+protobuf==4.25.2
+colorama==0.4.6
+typing_extensions==4.9.0
+setuptools==69.0.3

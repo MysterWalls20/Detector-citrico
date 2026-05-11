@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_0193891c285972a703bf9702518c0cf4 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_0193891c285972a703bf9702518c0cf4" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_0193891c285972a703bf9702518c0cf4 = L.map(
+                "map_0193891c285972a703bf9702518c0cf4",
+                {
+                    center: [-8.09111, -79.02535],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 17,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_18de7eaa3d103148ac93ee2cc8c5aa3d = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_18de7eaa3d103148ac93ee2cc8c5aa3d.addTo(map_0193891c285972a703bf9702518c0cf4);
+        
+    
+            var marker_a9be586d717c34b060f209519e640cdc = L.marker(
+                [-8.09111, -79.02535],
+                {
+}
+            ).addTo(map_0193891c285972a703bf9702518c0cf4);
+        
+    
+            var icon_12c7277d3ea0ab90e564720f2206046c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "ok-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3718e5fa24968d110eb30caf5a1e25e2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_98bf6a8b3da038d17cd346a9e7efa50e = $(`<div id="html_98bf6a8b3da038d17cd346a9e7efa50e" style="width: 100.0%; height: 100.0%;"><b>hermelinda_mercado.jpg</b><br>Lat: -8.091110<br>Lon: -79.025350<br>Alt: 83.00 m</div>`)[0];
+                popup_3718e5fa24968d110eb30caf5a1e25e2.setContent(html_98bf6a8b3da038d17cd346a9e7efa50e);
+            
+        
+
+        marker_a9be586d717c34b060f209519e640cdc.bindPopup(popup_3718e5fa24968d110eb30caf5a1e25e2)
+        ;
+
+        
+    
+    
+                marker_a9be586d717c34b060f209519e640cdc.setIcon(icon_12c7277d3ea0ab90e564720f2206046c);
+            
+    
+            var marker_5fdc5ad643c1e7f2bb0a5e621aad26f9 = L.marker(
+                [-8.095, -79.03],
+                {
+}
+            ).addTo(map_0193891c285972a703bf9702518c0cf4);
+        
+    
+            var icon_c5b29e89fea92ecd9cbe14ac314d987a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "ok-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_763b58567effc284297f06ec943e4a59 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_96591da2f3dd7a07526e7b9c72c95b7b = $(`<div id="html_96591da2f3dd7a07526e7b9c72c95b7b" style="width: 100.0%; height: 100.0%;"><b>mercado_frutas_nuevaplaça.jpg</b><br>Lat: -8.095000<br>Lon: -79.030000<br>Alt: 80.00 m</div>`)[0];
+                popup_763b58567effc284297f06ec943e4a59.setContent(html_96591da2f3dd7a07526e7b9c72c95b7b);
+            
+        
+
+        marker_5fdc5ad643c1e7f2bb0a5e621aad26f9.bindPopup(popup_763b58567effc284297f06ec943e4a59)
+        ;
+
+        
+    
+    
+                marker_5fdc5ad643c1e7f2bb0a5e621aad26f9.setIcon(icon_c5b29e89fea92ecd9cbe14ac314d987a);
+            
+    
+            var marker_d3e02c02a0c24d76cf33ae32897cfd6c = L.marker(
+                [-8.114, -79.0295],
+                {
+}
+            ).addTo(map_0193891c285972a703bf9702518c0cf4);
+        
+    
+            var icon_f2177fa5b546e573c3ba24fb5c6bc8d5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "ok-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3deb2683eb8e2190ac13e28b3feb91ca = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d9934637e81e627fee6c4d34c96e846c = $(`<div id="html_d9934637e81e627fee6c4d34c96e846c" style="width: 100.0%; height: 100.0%;"><b>mercado_los_portales.jpg</b><br>Lat: -8.114000<br>Lon: -79.029500<br>Alt: 70.00 m</div>`)[0];
+                popup_3deb2683eb8e2190ac13e28b3feb91ca.setContent(html_d9934637e81e627fee6c4d34c96e846c);
+            
+        
+
+        marker_d3e02c02a0c24d76cf33ae32897cfd6c.bindPopup(popup_3deb2683eb8e2190ac13e28b3feb91ca)
+        ;
+
+        
+    
+    
+                marker_d3e02c02a0c24d76cf33ae32897cfd6c.setIcon(icon_f2177fa5b546e573c3ba24fb5c6bc8d5);
+            
+    
+            var marker_79f0fb6861594ead2699e1c9388e5cfd = L.marker(
+                [-8.12583, -79.03222],
+                {
+}
+            ).addTo(map_0193891c285972a703bf9702518c0cf4);
+        
+    
+            var icon_8b954c47cd2d303475a3e358d159b7bc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "ok-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fd0808d10db0eaf293dacf5f75fa2cc4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a3eeff20075f0c25743d415dd19d7198 = $(`<div id="html_a3eeff20075f0c25743d415dd19d7198" style="width: 100.0%; height: 100.0%;"><b>mercado_zonal_palermo.jpg</b><br>Lat: -8.125830<br>Lon: -79.032220</div>`)[0];
+                popup_fd0808d10db0eaf293dacf5f75fa2cc4.setContent(html_a3eeff20075f0c25743d415dd19d7198);
+            
+        
+
+        marker_79f0fb6861594ead2699e1c9388e5cfd.bindPopup(popup_fd0808d10db0eaf293dacf5f75fa2cc4)
+        ;
+
+        
+    
+    
+                marker_79f0fb6861594ead2699e1c9388e5cfd.setIcon(icon_8b954c47cd2d303475a3e358d159b7bc);
+            
+    
+            var marker_17264a35ae1fcd604872be7cf669f12f = L.marker(
+                [-8.10556, -79.02361],
+                {
+}
+            ).addTo(map_0193891c285972a703bf9702518c0cf4);
+        
+    
+            var icon_1223b01f1a00d31a2e3b6b729ec3d470 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "ok-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e810ec62520960ffb32be82859d34305 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9ce598dd0f690bdaad8c0792dd9baa2e = $(`<div id="html_9ce598dd0f690bdaad8c0792dd9baa2e" style="width: 100.0%; height: 100.0%;"><b>mercado_indoamericano.jpg</b><br>Lat: -8.105560<br>Lon: -79.023610</div>`)[0];
+                popup_e810ec62520960ffb32be82859d34305.setContent(html_9ce598dd0f690bdaad8c0792dd9baa2e);
+            
+        
+
+        marker_17264a35ae1fcd604872be7cf669f12f.bindPopup(popup_e810ec62520960ffb32be82859d34305)
+        ;
+
+        
+    
+    
+                marker_17264a35ae1fcd604872be7cf669f12f.setIcon(icon_1223b01f1a00d31a2e3b6b729ec3d470);
+            
+    
+            var marker_ad0068c9e1e3a276c6a3d9f0e6f51cf4 = L.marker(
+                [-8.09111, -79.00222],
+                {
+}
+            ).addTo(map_0193891c285972a703bf9702518c0cf4);
+        
+    
+            var icon_e2fcdd0d65443cdf684b44a1d8d8aede = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "ok-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d060376c1265639e0f3e4fb36d107a87 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1bc4f15e07112ab11e9a89360e759f70 = $(`<div id="html_1bc4f15e07112ab11e9a89360e759f70" style="width: 100.0%; height: 100.0%;"><b>mercado_la_rinconada.jpg</b><br>Lat: -8.091110<br>Lon: -79.002220</div>`)[0];
+                popup_d060376c1265639e0f3e4fb36d107a87.setContent(html_1bc4f15e07112ab11e9a89360e759f70);
+            
+        
+
+        marker_ad0068c9e1e3a276c6a3d9f0e6f51cf4.bindPopup(popup_d060376c1265639e0f3e4fb36d107a87)
+        ;
+
+        
+    
+    
+                marker_ad0068c9e1e3a276c6a3d9f0e6f51cf4.setIcon(icon_e2fcdd0d65443cdf684b44a1d8d8aede);
+            
+    
+            var marker_9f233ab16d3de74abd52fbb624de8385 = L.marker(
+                [-8.10549, -79.02114],
+                {
+}
+            ).addTo(map_0193891c285972a703bf9702518c0cf4);
+        
+    
+            var icon_81a5e272121115caaa9c61f5192bf84e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "ok-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_07cfd32e3ac4c1442b47fa3d0810cf4a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3d7ae43faa4d0f83aa3baa92ec7a5d99 = $(`<div id="html_3d7ae43faa4d0f83aa3baa92ec7a5d99" style="width: 100.0%; height: 100.0%;"><b>mercado_la_union.jpg</b><br>Lat: -8.105490<br>Lon: -79.021140</div>`)[0];
+                popup_07cfd32e3ac4c1442b47fa3d0810cf4a.setContent(html_3d7ae43faa4d0f83aa3baa92ec7a5d99);
+            
+        
+
+        marker_9f233ab16d3de74abd52fbb624de8385.bindPopup(popup_07cfd32e3ac4c1442b47fa3d0810cf4a)
+        ;
+
+        
+    
+    
+                marker_9f233ab16d3de74abd52fbb624de8385.setIcon(icon_81a5e272121115caaa9c61f5192bf84e);
+            
+    
+            var marker_ec3ebf9c6e61890bc44a68184c1d33bb = L.marker(
+                [-8.11226, -79.0257],
+                {
+}
+            ).addTo(map_0193891c285972a703bf9702518c0cf4);
+        
+    
+            var icon_6c9071a348c1cbb5dd063d664179f922 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "ok-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_288c58c1d0cd383b0cd9127f26c49796 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_175b67f6afe7c4cc034070be9cde84c2 = $(`<div id="html_175b67f6afe7c4cc034070be9cde84c2" style="width: 100.0%; height: 100.0%;"><b>mercado_central_trujillo.jpg</b><br>Lat: -8.112260<br>Lon: -79.025700<br>Alt: 48.00 m</div>`)[0];
+                popup_288c58c1d0cd383b0cd9127f26c49796.setContent(html_175b67f6afe7c4cc034070be9cde84c2);
+            
+        
+
+        marker_ec3ebf9c6e61890bc44a68184c1d33bb.bindPopup(popup_288c58c1d0cd383b0cd9127f26c49796)
+        ;
+
+        
+    
+    
+                marker_ec3ebf9c6e61890bc44a68184c1d33bb.setIcon(icon_6c9071a348c1cbb5dd063d664179f922);
+            
+    
+            var marker_68a324d9897077fc67f7cbba6de7d75b = L.marker(
+                [-8.09448, -79.01406],
+                {
+}
+            ).addTo(map_0193891c285972a703bf9702518c0cf4);
+        
+    
+            var icon_d0e7d9e1a38c842cf1879e2e53b926ec = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "ok-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fdff2bb55dcb52bba96a3a5412fecad3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b99060f3a37d3bb24881324726828e0b = $(`<div id="html_b99060f3a37d3bb24881324726828e0b" style="width: 100.0%; height: 100.0%;"><b>mercado_villarreal.jpg</b><br>Lat: -8.094480<br>Lon: -79.014060<br>Alt: 66.00 m</div>`)[0];
+                popup_fdff2bb55dcb52bba96a3a5412fecad3.setContent(html_b99060f3a37d3bb24881324726828e0b);
+            
+        
+
+        marker_68a324d9897077fc67f7cbba6de7d75b.bindPopup(popup_fdff2bb55dcb52bba96a3a5412fecad3)
+        ;
+
+        
+    
+    
+                marker_68a324d9897077fc67f7cbba6de7d75b.setIcon(icon_d0e7d9e1a38c842cf1879e2e53b926ec);
+            
+</script>
+</html>
