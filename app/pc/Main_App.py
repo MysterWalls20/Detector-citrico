@@ -40,8 +40,8 @@ def project_root() -> Path:
     # Si empacas con PyInstaller
     if hasattr(sys, "_MEIPASS"):
         return Path(sys._MEIPASS)  # type: ignore
-    # app/main.py -> subir dos niveles: app/  -->  raiz del repo
-    return Path(__file__).resolve().parents[1]
+    # app/pc/Main_App.py -> subir tres niveles: app/pc/  -->  raiz del repo
+    return Path(__file__).resolve().parents[2]
 
 ROOT = project_root()
 

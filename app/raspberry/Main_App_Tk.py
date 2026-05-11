@@ -165,7 +165,7 @@ class MotorController:
 def project_root() -> Path:
     if hasattr(sys, "_MEIPASS"):
         return Path(sys._MEIPASS)
-    return Path(__file__).resolve().parents[1]  # raíz del proyecto
+    return Path(__file__).resolve().parents[2]  # raíz del proyecto (app/raspberry/ -> ../..)
 
 ROOT = project_root()
 YOLOV5_DIR = (ROOT / "yolov5").resolve()
